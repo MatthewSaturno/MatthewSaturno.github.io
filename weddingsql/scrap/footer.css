@@ -1,0 +1,756 @@
+ /*
+ ===============================
+   Author: Matthew Saturno
+   Date:   Dec 13, 2020
+   
+   Colour Palette:
+   ---------------
+   Light purple:	EBDEDB
+   Dark Pink:	    D14189
+   Light Pink:	  AA3353
+   Brown:			    4b2707
+   Light Blue:    76a8d94c
+   =============================== */
+
+/* General */
+
+html {
+	height: 100vh;
+}
+
+body {
+   background: black;
+   color: #333;
+   font-size: 14px;
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   height: 100vh;
+}
+
+.panel {
+  background: #d4e6f4ff;
+}
+
+.panel .container{
+  background: none;
+  border: none;
+  z-index: 1;
+}
+
+
+.container {
+   width: 924px;
+   margin: 0 auto;
+   padding: 15px 12px;
+   background: #F6F6F6;
+   border-right: solid 2px #b6bbc0f7;
+   border-left: solid 2px #b6bbc0f7;
+   /*min-height: 100vh;*/
+
+}
+
+.wrapper {
+	width: 100vw;
+	margin: 0 auto;
+	background: #fff;
+
+}
+
+
+
+/* Typography */
+
+h1, h2 {
+   color: #333;
+   font-size: 50px;
+   font-weight: normal;
+   font-family: 'Dancing Script', cursive;
+   margin: 0;
+   text-align: center;
+   padding: 0 0 20px;
+}
+
+.our-story h1, #blog h1 {
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+.top_header {
+  margin: 65px 0 65px 0;
+}
+
+q, blockquote {
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-weight: bold;
+}
+
+p {
+   margin: 0;
+}
+
+#engagement-photo {
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+a:link {
+   color: #333;
+}
+
+a:visited {
+   color: #333;
+}
+
+a:hover {
+   color: #D14189;
+}
+
+
+/* Header */
+
+header nav {
+   /*position: relative;*/
+   /*left: 47px;*/
+}
+
+header nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: block;
+   line-height: 300px;
+   font-size: 25px;
+}
+
+header nav ul li {
+   display: inline-block;
+   /*Use inline-block bc it places the image nicer*/
+   padding: 0 20px;
+   /*width: 75px;*/
+}
+
+header nav ul li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Times New Roman, 'Dancing Script', cursive;
+}
+
+ header nav ul li a:hover {
+   padding-top: 20px;
+   /*background: url('../images/tiny-donut.png') top center no-repeat;*/
+}
+
+header nav ul li#logo a {
+   display: inline-block;
+   background: url(../images/wedding-crest2.png) center center no-repeat;
+   background-size: 300px;
+   text-indent: -9999px;
+   height: 300px;
+   width: 300px;
+}
+
+header nav ul li#logo a:hover {
+   padding: 0;
+   /*background: url('../images/logo-hover.png') center center no-repeat;*/
+}
+
+
+/* Slideshow */
+
+.slideshow {
+   text-align: center;
+   background: #FFF;
+
+}
+
+
+.slideshow img {
+   width: 65%;
+   height: 65%;
+   display: block;
+   /*border: solid 4px #b6bbc0f7;*/
+   box-shadow: 0 0 25px 5px #333; 
+   margin-bottom: 5px;
+}
+
+
+/* The Whole Story */
+
+#story-par {
+   text-align: center;
+   font-size: 22px;
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   margin-bottom: 20px;
+
+}
+
+.story-excerpt {
+   /*width: 600px;*/
+   margin: 0 80px 80px 80px;
+   /*float: left;*/
+   font-size: 16px;
+}
+
+.cartoon-scroll {
+   width: 200px;
+   float: right;
+   padding: 130px 0 15px 15px;
+   background: url('../images/book4.png') top center no-repeat;
+   background-size: 100px;
+}
+
+
+q {
+   margin: 0;
+   padding: 0;
+ }
+
+blockquote {
+   margin: 0 0 0 20px;
+   padding: 0;
+
+}
+
+
+/* News & Events */
+
+header h2 {
+   font-size: 20px;
+   text-align: left;
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   padding: 0;
+   margin-bottom: 10px;
+   height: auto;
+   min-height: 50px;
+}
+
+
+article {
+   width: 422px;
+   float: left;
+   margin-right: 40px;
+}
+
+#blog-posts p {
+   margin: 20px 0 20px;
+}
+
+
+/* Footer */
+
+
+footer.main {
+   background-color: black;
+   color: #f2f3ee;
+   padding: 30px 0;
+   /*position: sticky;*/
+   top: 100%;
+   text-align: center;
+   height: auto;
+   background-size: 200%;
+
+}
+
+footer.main .container {
+  background-color: black;
+  border: none;
+}
+
+#credits a:link {
+   color: #f2f3ee;
+   text-decoration: none;
+}
+
+#credits a:visited {
+   color: #f2f3ee;
+}
+
+#credits a:hover {
+   color: #f2f3ee;
+}
+
+
+
+
+/*@media (min-height: 1700px) {*/
+  /*footer.main {*/
+    /*height: 1300px;*/
+  /*}*/
+/*}*/
+
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+
+
+/*--------------------------
+RSVP - Page
+--------------------------*/
+
+
+#rsvp p {
+   display: block;
+   margin: 0 auto;
+   width: 462px;
+   text-align: center;
+}
+
+form {
+   display: block;
+   margin: 0 auto;
+   width: 462px;
+}
+
+form label {
+   display: block;
+   margin: 20px auto 0 auto;
+   width: 452px;
+   padding: 5px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+form input, select, textarea {
+   display: block;
+   width: 452px;
+   padding: 5px;
+   /*margin: 0 0 10px;*/
+   border: none;
+   font-size: 22px;
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-style: italic;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}
+
+form select {
+   width: 462px;
+}
+
+form textarea {
+   width: 458px;
+   height: 100px;
+   font-size: 16px;
+   font-style: normal;
+}
+
+form input[type="submit"] {
+   background: #76a8d94c;
+   font-weight: bold;
+   font-style: normal;
+   cursor: pointer;
+   color: #333;
+   width: 470px;
+   margin: 10px 0 100px;
+   border-radius: 12px;
+   box-shadow: 
+}
+
+#rsvp #rsvp-p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.radio {
+	width: 15px;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+#dynamic_field {
+  position: relative;
+  width: 462px;
+}
+
+#dynamic_field .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Times New Roman, 'Dancing Script', cursive;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 10px;
+  background: none;
+  color: green;
+  border-radius: 12px;
+  background-color: #b1f48dd0;
+  box-shadow: 0 0 6px 0px #333;
+}
+
+.btn_remove {
+  color: #fff;
+  background-color: #d0030382;
+}
+
+
+
+/*--------------------------
+Location - Page
+--------------------------
+*/
+.cranberry {
+   font-size: 24px;
+   padding-left: 40px;
+}
+
+
+.add-loc img {
+   /*border: solid 6px #b6bbc0f7;*/
+   box-shadow: 0 0 25px 5px #333;
+   margin: 15px 0 15px 0;
+}
+
+.loc-p {
+	padding: 0 40px 0 40px;
+}
+
+#link {
+	padding: 0 40px 0 40px;
+}
+
+address u {
+   list-style: none;
+   text-decoration: none;
+}
+
+address {
+   margin-bottom: 20px;
+   padding: 0 0 0 40px;
+}
+
+
+/*--------------------------
+FAQ - Page
+--------------------------*/
+
+.FAQ p {
+   margin-bottom: 10px;
+   width: 800px;
+   margin-left: 45px;
+}
+
+.FAQ .cranberry {
+   margin-bottom: 10px;
+   margin-right: 90px;
+   /*line-height: 24px;*/
+}
+
+.FAQ .content {
+   display: none;
+   overflow: hidden;
+}
+
+
+.drpblock {
+  margin: 40px 0px 40px 0px;
+  display: block;
+  position: relative;
+}
+
+.drpblock .content {
+	margin: 0 0px 0 90px;
+	width: 750px;
+}
+
+.collapsible {
+   width: 25px;
+   display: inline-block;
+   float: left;
+   margin: 0 20px 0 40px;
+   background-color: #76a8d94c;
+   color: #333;
+   font-weight: bold;
+   cursor: pointer;
+   /*padding: 18px;*/
+   border: none;
+   /*text-align: left;*/
+   outline: none;
+   font-size: 15px;
+   /*margin-bottom: 40px;*/
+   position: absolute;
+   top: 5px;
+   box-shadow: 0 0 4px 1px #333;
+
+}
+
+
+/*--------------------------
+Contact Us - Page
+--------------------------*/
+
+#contact img {
+   height: 45%;
+   width: 45%;
+   /*border: solid 6px #b6bbc0f7;*/
+   display: inline-block;
+   float: left;
+   margin-bottom: 100px;
+   margin-right: 50px;
+   margin-left: 20px;
+   box-shadow: 0 0 15px 5px #333;
+}
+
+
+.list ul {
+   list-style: none;
+   text-decoration: none;
+   float: left;
+   width: 405px;
+   margin: 0 0 20px 0;
+   padding-left: 0;
+}
+
+.list p {
+   font-weight: bold;
+}
+
+
+/*--------------------------
+DROPDOWN
+--------------------------*/
+
+/* Dropdown Button */
+.dropbtn {
+  /*background-color: #EEE;*/
+/*  padding: 0 100px 0 0;*/
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Times New Roman, 'Dancing Script', cursive;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: #333;
+  width: 100px;
+  /*height: 158px;*/
+  line-height: 300px;
+  float: left;
+}
+
+/* Dropdown button on hover & focus*/ 
+.dropbtn:hover, .dropbtn:focus {
+  /*background-color: #2980B9; */
+  color: #D14189;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 158px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: auto;
+  line-height: 25px;
+  top: 165px;
+  left: -60px;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  /*color: black;*/
+  padding: 12px 16px;
+  /*text-decoration: none;*/
+  display: block;
+  width: 200px;
+  font-size: 18px;
+}
+
+header nav ul li #myDropdown a:hover {
+   padding-top: 12px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/*--------------------------
+About the Bride and Groom
+--------------------------*/
+
+.subheader {
+	background: #eb8fadff;
+	height: 150px;
+	color: #F6F6F6;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Times New Roman";
+
+}
+
+.subheader h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 60px;
+}
+
+.groom {
+	background: #669ed4ec;
+}
+
+#profiles1 {
+	width: 200px;
+	height: 200px;
+	margin: 75px 100px 50px 100px;
+	background: url('../images/IMG_3850.jpg') top left no-repeat;
+	background-size: 150%;
+	background-position: -62px -25px;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 5px #333;
+	float: left;
+}
+
+#profiles2 {
+	width: 200px;
+	height: 200px;
+	margin: 75px 100px 50px 100px;
+	background: url('../images/IMG_3807.jpg') top left no-repeat;
+	background-size: 150%;
+	background-position: -26px -55px;
+	border-radius: 50%;
+	box-shadow: 0 0 25px 5px #333;
+	float: left;
+}
+
+
+.profile-writing {
+	width: 855px;
+	margin-left: 35px;
+}
+
+
+.about-blurb {
+	width: 280px;
+	margin: 5px;
+	padding: 5px;
+	padding-top: 85px;
+	background: url(../images/uni-scroll.png) top center no-repeat;
+	background-size: 95px 95px;
+	float: left;
+	/*position: relative;*/
+	/*display: inline-block;*/
+}
+
+.about-blurb p {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.about-blurb img {
+	width: 150%;
+	height: 150%;
+	padding: 5px;
+	box-shadow: 0 0 25px 5px #333; 
+} 
+
+.blurbimage1 {
+	background: none;
+	position: relative;
+	top: -50px;
+	right: -100px;
+}
+
+.blurbimage2 {
+	background: none;
+	position: relative;
+	top: -50px;
+	right: -100px;
+}
+
+.last {
+	margin-top: 100px;
+	position: relative;
+	right: -50px;
+	clear: left;
+}
+
+/*--------------------------
+Thank You Page
+--------------------------*/
+
+#addspace1 {
+	text-align: center;
+	font-size: 25px;
+}
+
+#addspace2 {
+	text-align: center;
+	/*margin-bottom: 65px; */
+	font-size: 25px;
+}
+
+#smiley {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#smiley img {
+	height: 40%;
+	width: 40%;
+}
+
+/*--------------------------
+Error RSVP Page
+--------------------------*/
+
+#error_head1 {
+  margin: 65px 0 0 20px;
+}
+
+#error_head2 {
+  margin: 0 0 265px 20px;
+}
+
+
+
+
+
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 

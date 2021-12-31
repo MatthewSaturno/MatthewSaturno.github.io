@@ -1,0 +1,35 @@
+/*Countdown CSS*/
+/*Taken from https://www.youtube.com/watch?v=NJVJRFF-Y6U&ab_channel=VerkkoNet*/
+
+#outer-clock .container {
+	padding: 0;
+	width: 948px;
+	background-image: #f6f6f6;
+}
+
+.countdownContainer {
+/*	position: absolute;
+	top: 50%;
+	left: 50%;*/
+	/*transform: translateX(-50%) translateY(-50%);*/
+	text-align: center;
+	background: #ddd;
+	border: 1px solid #999;
+	padding: 10px;
+	box-shadow: 0 0 5px 3px #CCC;
+	display: block;
+	width: 948px;
+}
+
+.countdownContainer td {
+	width: 924px;
+}
+
+.info {
+	font-size: 40px;
+}
+
+.info-sub {
+	font-size: 15px;
+}
+
